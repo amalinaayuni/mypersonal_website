@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY GALLERY</title>
+</head>
+<body>
+
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #ff6699;
+}
+.active {
+  background-color: #ff6699;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image: url('image/pink1.jpg');
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-image: url('image/pink1.jpg');
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 200px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  70% { transform: translate(-1px, 2px) rotate(-1deg); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to My Personal Website</h1>
+  <h3><i>By Nur Amalina Ayuni binti Che Ismail</i></h3>
+</div>
+
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="education.html">EDUCATION</a></li>
+  <li><a href="experience.html">EXPERIENCE</a></li>
+  <li><a href="family.html">FAMILY</a></li>
+  <li><a class="active" href="gallery.html">GALLERY</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+</ul>
+
+<br>
+<center>
+<h3 style="background-color: black; color: pink;">Family</h3>
+<img src="image/f1.jpg" height="200px">
+<img src="image/f2.jpg" height="200px">
+<img src="image/f3.jpg" height="200px">
+<img src="image/f4.jpg" height="200px">
+
+<h3 style="background-color: black; color: pink;">My Babies</h3>
+
+<p>Having them come into my life is the ultimate gift! I love all my little sunshines unconditionally.</p>
+<p><i>Tap the image to see caption</i></p>
+
+<div class="container">
+  <img src="image/adam.jpg" class="image">
+  <div class="overlay">Adam: He may be all grown up now, but in my heart, he'll always be my little baby. Time truly flies.</div>
+</div>
+
+<div class="container">
+<img src="image/amsyar.jpg" class="image">
+<div class="overlay">Amsyar: He is the quirkiest in the family, but we never get boring with his spontaneous humor. </div>
+</div>
+
+<div class="container">
+<img src="image/fayyadh.jpg" class="image">
+<div class="overlay">Fayyadh: The playboy one, with four girlfriends at once before. Yet, he always had a special place in his heart for his sister.</div>
+</div>
+
+<div class="container">
+<img src="image/aisy.jpg" class="image">
+<div class="overlay">Aisy: The most mischievous one, leaving him all alone is never an option.</div>
+</div>
+
+<div class="container">
+<img src="image/latisya.jpg" class="image">
+<div class="overlay">Latisya: A true drama queen, but her charms always win me over.</div>
+</div>
+
+<div class="container">
+<img src="image/armel.jpg" class="image">
+<div class="overlay">Armel: The most adorable one, truly melts my heart.</div>
+</div>
+
+
+
+<h3 style="background-color: black; color: pink;">Convocation</h3>
+<img src="image/convo1.jpg" height="250px">
+<img src="image/convo2.jpg" height="250px">
+<img src="image/convo3.jpg" height="250px">
+<img src="image/convo4.jpg" height="250px">
+
+<h3 style="background-color: black; color: pink;">Video</h3>
+<video width="300" controls>
+  <source src="video/1.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+
+</video>
+<video width="290" controls>
+  <source src="video/2.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+</center>
+  
+<br><br>
+<div class="footer">
+  <p><i>“We all have our time machines. Some take us back, they're called memories. Some take us forward, they're called dreams.”</p></i>
+</div>
+
+</body>
+</html>
